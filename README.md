@@ -1,0 +1,12 @@
+AsynDataCoreLoading
+===================
+The project consists of a single table view which data will be loaded into from a server. Data will be loaded from the reddit.com website and parsed using JSON. Thumbnails must be loaded and displayed in the table as well.
+
+Here is an example API call:
+http://www.reddit.com/search.json?q=ferrari
+
+Additional parameters can be added as specified in the API:
+http://www.reddit.com/dev/api#GET_search
+1. Update GFTableViewCell to support display of an image.  Image is derived from 'thumbnail' within the JSON pulled from the server.  This parameter may or may not exist.
+2. Update DataLoader to store data within a Core Data model.  This cached data should be loaded upon startup.
+3. Add code to load data asynchronously so as to make the UI responsive.
